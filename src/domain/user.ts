@@ -1,13 +1,13 @@
 class User {
-  private _id: number;
+  private _id: number | null;
   private _name: string;
   private _age: number;
 
-  public get id(): number {
+  public get id(): number | null {
     return this._id;
   }
 
-  public set id(id: number) {
+  public set id(id: number | null) {
     this._id = id;
   }
 
